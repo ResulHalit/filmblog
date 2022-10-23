@@ -1,0 +1,70 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/53b2556b29.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    <title>içerik Yazısı</title>
+    
+</head>
+<body>
+    
+    <div class="topnav">
+        <div class="logo"><h1>FİLM BLOG</h1></div>
+        <ul class="navbar">
+            <li><a href="{% url 'index' %}"><i class="fa-solid fa-house "></i><b>Anasayfa</b></a></li>
+            <li><a href="{% url 'about' %}"><i class="fa-solid fa-id-badge"></i><b>Hakkında</b></a></li>
+            <li><a href="{% url 'contact' %}"><i class="fa-solid fa-address-card"></i><b>İletişim</b></a></li>
+        </ul>
+        <div class="contact">
+                <a class="wp" href="tel:05074764867"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                <a class="link" href="https://www.linkedin.com/in/resul-halit-026186238/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a class="ins" href="https://www.instagram.com/resulhalit/?hl=tr" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a class="tw" href="https://twitter.com/ResulWuHalit" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        </div>
+    </div> 
+
+    <div class="content-container">
+        <div class="all-content">
+            {% for content in post %}
+            <div class="content-photo">
+                <div class="header"><h3><b>{{ content.baslık }}</b></h3></div>
+                <div class="photo">
+                    <img src="{{ content.resim.url }}" alt="">
+                    <a href="{{ content.imdb }}" target="_blank" ><p><i style="background-color:var(--ipt-on-baseAlt-accent1-color,rgb(245,197,24))" class="fa-brands fa-imdb"></i>IMDb</p></a>
+                </div>
+            </div>
+            <div class="content-post"><p>{{ content.yazi }}</p></div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <ul class="footer-navbar">
+            <li><a href="{% url 'index' %}"><i class="fa-solid fa-house "></i><b>Anasayfa</b></a></li>
+            <li><a href="{% url 'about' %}"><i class="fa-solid fa-id-badge"></i><b>Hakkında</b></a></li>
+            <li><a href="{% url 'contact' %}"><i class="fa-solid fa-address-card"></i><b>İletişim</b></a></li>
+        </ul>
+        <div class="footer-contact">
+            <a class="wp" href="tel:05074764867"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            <a class="link" href="https://www.linkedin.com/in/resul-halit-026186238/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a class="ins" href="https://www.instagram.com/resulhalit/?hl=tr" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a class="tw" href="https://twitter.com/ResulWuHalit" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="name">
+        <p>© 2022 RESUL HALİT</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/53b2556b29.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>İletişim</title>
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo"><h1>FİLM BLOG</h1></div>
+        <ul class="navbar">
+            <li><a href="{% url 'index' %}"><i class="fa-solid fa-house "></i><b>Anasayfa</b></a></li>
+            <li><a href="{% url 'about' %}"><i class="fa-solid fa-id-badge"></i><b>Hakkında</b></a></li>
+            <li><a href="{% url 'contact' %}"><i class="fa-solid fa-address-card"></i><b>İletişim</b></a></li>
+        </ul>
+        <div class="contact">
+                <a class="wp" href="tel:05074764867"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                <a class="link" href="https://www.linkedin.com/in/resul-halit-026186238/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a class="ins" href="https://www.instagram.com/resulhalit/?hl=tr" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a class="tw" href="https://twitter.com/ResulWuHalit" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        </div>
+    </div>
+    
+
+    <div class="about-container">
+        <div class="about-content">
+            <div class="about-header">
+                <p>Hakkımda</p>
+            </div>
+            <div class="about-post">
+                <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quae commodi voluptatibus veniam deserunt repellat aut cupiditate consequatur eum 
+                    culpa minima! Beatae tempora impedit maxime velit, nisi cupiditate officiis 
+                    veritatis perspiciatis? </b>
+                    <br>
+                    <br>
+                    <b>ipsum dolor sit amet consectetur adipisicing elit. Minima necessitatibus 
+                    atque eum saepe pariatur enim beatae inventore labore, corporis possimus iusto 
+                    similique molestiae quidem perferendis illum assumenda, sapiente, sequi quia.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum perferendis 
+                    maiores ipsum aperiam, inventore sapiente! Accusamus nisi ex eaque amet est 
+                    repellendus vel natus maiores a molestiae sequi, quidem repellat!</b> 
+                
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div class="footer">
+        <ul class="footer-navbar">
+            <li><a href="{% url 'index' %}"><i class="fa-solid fa-house "></i><b>Anasayfa</b></a></li>
+            <li><a href="{% url 'about' %}"><i class="fa-solid fa-id-badge"></i><b>Hakkında</b></a></li>
+            <li><a href="{% url 'contact' %}"><i class="fa-solid fa-address-card"></i><b>İletişim</b></a></li>
+        </ul>
+        <div class="footer-contact">
+            <a class="wp" href="tel:05074764867"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            <a class="link" href="https://www.linkedin.com/in/resul-halit-026186238/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a class="ins" href="https://www.instagram.com/resulhalit/?hl=tr" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a class="tw" href="https://twitter.com/ResulWuHalit" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="name">
+        <p>© 2022 RESUL HALİT</p>
+    </div>
+</body>
+</html>

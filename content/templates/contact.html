@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/53b2556b29.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>İletişim</title>
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo"><h1>FİLM BLOG</h1></div>
+        <ul class="navbar">
+            <li><a href="{% url 'index' %}"><i class="fa-solid fa-house "></i><b>Anasayfa</b></a></li>
+            <li><a href="{% url 'about' %}"><i class="fa-solid fa-id-badge"></i><b>Hakkında</b></a></li>
+            <li><a href="{% url 'contact' %}"><i class="fa-solid fa-address-card"></i><b>İletişim</b></a></li>
+        </ul>
+        <div class="contact">
+                <a class="wp" href="tel:05074764867"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                <a class="link" href="https://www.linkedin.com/in/resul-halit-026186238/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a class="ins" href="https://www.instagram.com/resulhalit/?hl=tr" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a class="tw" href="https://twitter.com/ResulWuHalit" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        </div>
+    </div>
+    
+
+
+    <div class="contact-container">
+        <div class="form">
+            <form action="https://formspree.io/resulhalit@gmail.com" method="post" >
+      
+            <label for="fname">İsim</label>
+            <input type="text" id="fname" name="firstname" placeholder="Adınızı giriniz">
+      
+            <label for="lname">Soyisim</label>
+            <input type="text" id="lname" name="lastname" placeholder="Soyadınızı giriniz">
+      
+            <label for="email">E-posta</label>
+            <input type="text" id="email" name="mail" placeholder="E-postanızı giriniz">
+          
+      
+            <label for="subject">Konu</label>
+            <textarea id="subject" name="subject" placeholder="Bir şeyler yaz..." style="height:200px"></textarea>
+      
+            <input type="submit" value="Gönder">
+      
+            </form>
+        </div>
+      </div>
+
+
+
+
+
+
+    <div class="footer">
+        <ul class="footer-navbar">
+            <li><a href="{% url 'index' %}"><i class="fa-solid fa-house "></i><b>Anasayfa</b></a></li>
+            <li><a href="{% url 'about' %}"><i class="fa-solid fa-id-badge"></i><b>Hakkında</b></a></li>
+            <li><a href="{% url 'contact' %}"><i class="fa-solid fa-address-card"></i><b>İletişim</b></a></li>
+        </ul>
+        <div class="footer-contact">
+            <a class="wp" href="tel:05074764867"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            <a class="link" href="https://www.linkedin.com/in/resul-halit-026186238/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a class="ins" href="https://www.instagram.com/resulhalit/?hl=tr" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a class="tw" href="https://twitter.com/ResulWuHalit" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="name">
+        <p>© 2022 RESUL HALİT</p>
+    </div>
+</body>
+</html>
