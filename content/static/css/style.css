@@ -19,12 +19,13 @@ html, body{
     width: 100%;
     background-color: #87805E;
     display: flex;
+    overflow: hidden;
     
 
 }
 .logo{
     height: 100%;
-    width: 30%;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +33,7 @@ html, body{
 }
 .navbar {
     height: 100%;
-    width: 40%;
+    width: 60%;
     background-color: #87805E;
     overflow: hidden;
     display: flex;
@@ -40,20 +41,26 @@ html, body{
     align-items: center;
     margin: 0 0 0 0;
     padding-left: 0;
-    
-    
-    
+  
   }
+  .user{
+    font-weight: 900;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
 
   .navbar li {
-    width: 25%;
+    width: 23%;
     float: left;
     text-align: center;
-    padding: 14px 16px;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #E5EFC1;
     
-    
-    
+
   }
   .topnav li i{
     margin-right: 5px;
@@ -62,14 +69,19 @@ html, body{
     color: #E5EFC1;
     display: block;
     font-weight: 100;
+    float: left;
+    
   }
-
+.active{
+  color: #5e5942;
+}
   .navbar a:hover{
     color: #cdd6a9;
   }
   .contact{
     height: 100%;
-    width: 30%;
+    width: 20%;
+    margin-left: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,7 +355,7 @@ input[type=submit] {
 }
 .content-post{
   padding: 10px 10px 10px 10px;
-  letter-spacing: 4px; 
+  letter-spacing: 3px; 
 }
 .content-post p{
   margin-bottom: 10px;
@@ -391,3 +403,160 @@ input[type=submit] {
   padding: 35px;
 }
 
+.post-owner-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.post-owner{
+  width: 93%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-owner p{
+  font-size: 18px;
+  color: black;
+  font-weight: 900;
+
+}
+.post-owner p:nth-child(2){
+ text-align: end;
+}
+
+/* REGİSTER FORM */
+
+
+
+/* Add padding to containers */
+.register-form-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.register-form-container form{
+  width: 40%;
+}
+
+.form-container {
+  width: 100%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #87805E;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+  
+  font-weight: 900;
+ 
+}
+
+/* CREATE FORM*/
+
+.create-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-form-container{
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+}
+.create-form-container form{
+  font-weight: 900;
+}
+.create-form-container form input[type=submit]{
+  width: 100%;
+}
+
+.create-form-container form input[type=submit]:hover{
+  background-color: #777259;
+}
+
+.movie-picture{
+  display: flex;
+  flex-direction: row;
+}
+.movie-picture:nth-child(2){
+  margin-top: 5px;
+}
+.movie-imdb{
+  display: flex;
+  flex-direction: row;
+}
+.movie-imdb:nth-child(2){
+  margin-top: 5px;
+  width: 100%;
+}
+
+.message{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message-text{
+  display: flex;
+  align-items: center;
+  color: rgb(207, 0, 0);
+  font-weight: 900;
+}
+.message-text p{
+  margin-right: 5px;
+}
+
+.psw-message{
+  font-weight: 900;
+  color: rgb(207, 0, 0);
+}

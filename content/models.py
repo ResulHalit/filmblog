@@ -8,6 +8,11 @@ class Content(models.Model):
     yazi = models.TextField(max_length = 10000, verbose_name="İçerik Yazısı")
     resim = models.FileField(upload_to='filmResmi/', null=True, blank=True, verbose_name="Film Resmi")
     imdb = models.URLField(max_length = 500, null=True, blank=True ,verbose_name="IMDb Linki")
+    isim = models.CharField(max_length =100, null=True, verbose_name="Yazı Sahibi")
+    tarih = models.DateField(null=True, verbose_name="Yazı Tarihi")
+    
+    
+    
     
     def __str__(self):
         return self.baslık

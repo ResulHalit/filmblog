@@ -6,4 +6,5 @@ urlpatterns = [
     path('contact/', contact, name="contact"),
     path('about/', about, name="about"),
     path("yazi/<int:id>", yazi, name="yazi"),
+    path("create/", olustur, name="create"),
 ]
