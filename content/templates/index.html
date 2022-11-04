@@ -23,12 +23,12 @@
             <li><a href="{% url 'about' %}"><i class="fa-solid fa-id-badge"></i><b>Hakkında</b></a></li>
             <li><a href="{% url 'contact' %}"><i class="fa-solid fa-address-card"></i><b>İletişim</b></a></li>
             {% if user.is_authenticated %}
-            <li><a href="{% url 'create' %}"><i class="fa-solid fa-pen"></i><b>Yazı Oluştur</b></a></li>
-            <li><a href="{% url 'logout' %}"><i class="fa-solid fa-pen"></i><b>Çıkış Yap</b></a></li>
+            <li class="media1"><a href="{% url 'create' %}"><i class="fa-solid fa-pen"></i><b>Yazı Oluştur</b></a></li>
+            <li class="media2"><a href="{% url 'logout' %}"><i class="fa-solid fa-pen"></i><b>Çıkış Yap</b></a></li>
             <p class="user"><b>{{request.user}}</b></p>
             {% else %}
-            <li><a href="{% url 'login' %}"><i class="fa-solid fa-right-to-bracket"></i><b>Giriş Yap</b></a></li>
-            <li><a href="{% url 'register' %}"><i class="fa-solid fa-user-plus"></i><b>Kayıt Ol</b></a></li>
+            <li class="media3"><a href="{% url 'login' %}"><i class="fa-solid fa-right-to-bracket"></i><b>Giriş Yap</b></a></li>
+            <li class="media4"><a href="{% url 'register' %}"><i class="fa-solid fa-user-plus"></i><b>Kayıt Ol</b></a></li>
             {% endif %}
             
         </ul>
