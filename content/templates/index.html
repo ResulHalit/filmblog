@@ -27,8 +27,8 @@
             <li class="media2"><a href="{% url 'logout' %}"><i class="fa-solid fa-pen"></i><b>Çıkış Yap</b></a></li>
             <p class="user"><b>{{request.user}}</b></p>
             {% else %}
-            <li class="media3"><a href="{% url 'login' %}"><i class="fa-solid fa-right-to-bracket"></i><b>Giriş Yap</b></a></li>
-            <li class="media4"><a href="{% url 'register' %}"><i class="fa-solid fa-user-plus"></i><b>Kayıt Ol</b></a></li>
+            <li class="media1"><a href="{% url 'login' %}"><i class="fa-solid fa-right-to-bracket"></i><b>Giriş Yap</b></a></li>
+            <li class="media2"><a href="{% url 'register' %}"><i class="fa-solid fa-user-plus"></i><b>Kayıt Ol</b></a></li>
             {% endif %}
             
         </ul>

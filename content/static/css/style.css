@@ -566,10 +566,10 @@ a {
 {
   position: relative;
 }
-.media3{
+.media1{
   display: none;
 }
-.media4{
+.media2{
   position: absolute;
   margin-right: 5px;
   width: 20px;
@@ -579,12 +579,7 @@ a {
   
 }
 .user{
-  /*position: absolute;
-  bottom: 5px;
-  left: 500px;*/
   display: none;
 }
-
-
 
 }
