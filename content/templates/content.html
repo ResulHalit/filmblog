@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     
-    <title>içerik Yazısı</title>
+    <title>İçerik Yazısı</title>
     
 </head>
 <body>
@@ -24,7 +24,7 @@
             <li><a href="{% url 'contact' %}"><i class="fa-solid fa-address-card"></i><b>İletişim</b></a></li>
             {% if user.is_authenticated %}
             <li><a href="{% url 'create' %}"><i class="fa-solid fa-pen"></i><b>Yazı Oluştur</b></a></li>
-            <li><a href="{% url 'create' %}"><i class="fa-solid fa-pen"></i><b>Çıkış Yap</b></a></li>
+            <li><a href="{% url 'logout' %}"><i class="fa-solid fa-pen"></i><b>Çıkış Yap</b></a></li>
             <p class="user"><b>{{request.user}}</b></p>
             {% else %}
             <li><a href="{% url 'login' %}"><i class="fa-solid fa-right-to-bracket"></i><b>Giriş Yap</b></a></li>
@@ -49,7 +49,7 @@
                     <a href="{{ content.imdb }}" target="_blank" ><p><i style="background-color:var(--ipt-on-baseAlt-accent1-color,rgb(245,197,24))" class="fa-brands fa-imdb"></i>IMDb</p></a>
                 </div>
             </div>
-            <div class="content-post"><p>{{ content.yazi }}</p></div>
+            <div class="content-post"><p>{{content.yazi}}</p></div>
             <br>
             <div class="post-owner-container">
                 <div class="post-owner">

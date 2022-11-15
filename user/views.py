@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login, logout 
 from django.contrib import messages
 from django.contrib.auth.models import User
 from .models import *
@@ -24,7 +24,7 @@ def userLogin(request):
 
 
 def userRegister(request):
-    if request.method == 'POST':
+    if request.method == "POST":
         username = request.POST['username']
         email = request.POST['email']
         password = request.POST['psw']
@@ -51,9 +51,7 @@ def userRegister(request):
                 user.save()
                 messages.success(request, 'Başarıyla Kayıt Oldunuz')
                 return redirect('login')
-    
-    
-    
+
     return render(request, "register.html")
 
 def userLogout(request):

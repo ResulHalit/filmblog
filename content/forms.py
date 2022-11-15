@@ -5,7 +5,7 @@ from .models import *
 class   ContentForm(ModelForm):
     class Meta:
         model = Content
-        fields = ['baslık','yazi','resim','imdb','isim','tarih']
+        fields = ['baslık','yazi','resim','imdb','isim']
     def __init__(self, *args, **kwargs):
         super(ContentForm, self).__init__(*args, **kwargs)
         

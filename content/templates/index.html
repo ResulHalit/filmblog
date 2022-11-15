@@ -57,7 +57,7 @@
             
 
             <div class="left-photo">
-                <a href="{% url 'yazi' content.id %}"><img src="{{ content.resim.url }}" alt="{{content.isim}}"></a>
+                <a href="{% url 'yazi' content.id %}"><img src="{{ content.resim.url }}" alt="{{ content.isim }}"></a>
             </div>
             <div class="left-header">
                 <h3><a href="{% url 'yazi' content.id %}">{{content.baslık}}</a></h3>

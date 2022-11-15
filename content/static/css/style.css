@@ -561,6 +561,10 @@ a {
   color: rgb(207, 0, 0);
 }
 
+.navbar li:nth-child(1){
+  border-left: 2px solid #E5EFC1;
+}
+
 @media screen and (max-width: 950px) {
 .topnav
 {
@@ -577,6 +581,9 @@ a {
   left: 350%;
   border-right: none;
   
+}
+.navbar li:nth-child(4){
+  display: none;
 }
 .user{
   display: none;
