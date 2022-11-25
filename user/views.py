@@ -37,9 +37,6 @@ def userRegister(request):
             elif User.objects.filter(email = email).exists():
                 messages.warning(request, 'Bu Email Zaten Kullanılıyor')
                 return redirect('register')
-            elif User.objects.filter( password != repassword):
-                messages.warning(request, 'Şifreler Uyuşmuyor')
-                return redirect('register')
             else:
                 user = User.objects.create_user(username = username, email=email, password=password)
                 Profile.objects.create(
